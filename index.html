@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <main>
-    <head>
-      <meta charset="utf-8">
-      <title>Hat page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles2.css"></link>
-    </head>
-    <body>
-      <video autoplay loop muted class="bvideo">
-        <source src="video.mp4" type="video/mp4">
-      </video>
-      <h1 class="content">BBL SEASON</h1>
-      <h2>I <em>love</em> <a href="https://www.pexels.com/search/hats/">hats</a></h2>
-      <p>yes</p>
-      <div>
-        <table>
-          <tr>
-            <th>Name</th><th>Gender</th>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <th>Alisha</th>
-            <th>Female</th>
-            <th>20</th>
-          </tr>
-        </table>
-      </div>
-      <div class="inp">
-        <form>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>First Form</title>
+  </head>
+  <body style="background-color: bisque;">
+    <main>
+      <h1 style="font-family: sans-serif ; text-align: center;">ENTER YOUR DETAILS</h1>
+      <section>
+        <form onsubmit= "alert('Successfully Submitted')">
           <fieldset>
-            <legend>Biodata</legend>
-            <label for="fullname">Full Name</label>
-            <input type="text" name="fullname" id="fullname" placeholder="Enter Your Name">
-            <label for="male">Male</label>
-            <input type="radio" name="sex" id="male" value="male">
+            <legend>BioData</legend>
+              <div style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
+                <label for="fullname">Full Name:</label><br />
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Your Name" required/>
+                <br>
+                <br>
+                <label for="email">E-mail Address:</label><br />
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required/>
+                <br>
+                <br>
+                <label for="phonenumber">Phone Number:</label><br />
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter Phone Number" maxlength="11" required/>
+                <br>
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male"/>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female"/>
+                <br>
+                <br>
+                <label for="pwd">Password:</label><br />
+                <input type="password" id="pwd" name="pwd" placeholder="Enter Password" minlength="6" required>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+              </div>  
           </fieldset>
         </form>
-    </div>
-    </body>
-  </main>
-</html>
+      </section>
+    </main>
+  </body>
